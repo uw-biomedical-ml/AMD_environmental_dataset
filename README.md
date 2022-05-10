@@ -1,4 +1,4 @@
-This repository contains the code used to generate our environmental data used in the analysis for [[PAPER TITLE HERE]]. We have provided both our generated data and our source code in hope that it will facilitate future analyses. Refer to the methods section for more detailed explanation of data preparation.
+This repository contains the code used to generate our environmental data used in the analysis for our paper, "Association of Environmental Factors with Age-Related Macular Degeneration using the Intelligent Research in Sight (IRIS)® Registry." We have provided both our generated data and our source code in hope that it will facilitate future analyses. Refer to the methods section for more detailed explanation of data preparation.
 
 The final data files used in our analysis are located in "final_data/". They are "final_data/ghi_matched_master_cleaned_plus_zcta.tsv" and "final_data/zcta_master_with_pollution.tsv". Files match those used in our analysis to within rounding error. 
 
