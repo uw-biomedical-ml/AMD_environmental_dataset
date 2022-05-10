@@ -2,18 +2,18 @@ This repository contains the code used to generate our environmental data used i
 
 The final data files used in our analysis are located in "final_data/". They are "final_data/ghi_matched_master_cleaned_plus_zcta.tsv" and "final_data/zcta_master_with_pollution.tsv". Files match those used in our analysis to within rounding error. 
 
--"final_data/zcta_master_with_pollution.tsv" contains each Zip Code Tabulation Area internal point matched to its nearest-neighbor environmental metric in each category. Each ZCTA is given a row in this dataset. This file was used in our analysis to assign environmental exposures to each patient in our study, as patients could be approximately localized to a ZCTA.
--"final_data/ghi_matched_master_cleaned_plus_zcta.tsv" is used to generate high-resolution maps of environmental variables and risk ratios. In this file, each point of measurement for GHI and DNI has been matched to their nearest neighbor for every other environmental variable. This permits plotting up to the resolution of GHI and DNI, our highest-resolution data.
+- "final_data/zcta_master_with_pollution.tsv" contains each Zip Code Tabulation Area internal point matched to its nearest-neighbor environmental metric in each category. Each ZCTA is given a row in this dataset. This file was used in our analysis to assign environmental exposures to each patient in our study, as patients could be approximately localized to a ZCTA.
+- "final_data/ghi_matched_master_cleaned_plus_zcta.tsv" is used to generate high-resolution maps of environmental variables and risk ratios. In this file, each point of measurement for GHI and DNI has been matched to their nearest neighbor for every other environmental variable. This permits plotting up to the resolution of GHI and DNI, our highest-resolution data.
 
 To generate these data files from scratch, run "./code/sh_run_all.sh".
 
-Notes: 
+__Notes:__
 - The zcta column in final_data/ghi_matched_master_cleaned_plus_zcta.tsv refers to the nearest ZCTA internal point, not necessarily the ZCTA within which the GHI and DNI latitude and longitude point reside.
 - Data generated in this repo matches our analysis data to 5 decimal places
 - An improvement to the mapping code would map each environmental variable at its native resolution, rather than at GHI resolution. This would actually result in more crisp maps, because the Voronoi cells would be larger with straight lines.
 
 
-Citations for Data Sources:
+__Citations for Data Sources:__
 - ZCTA information (coordinates internal points) obtained from R's Tigris package.
 - Elevation information from USGS Lidar Explorer: "https://prd-tnm.s3.amazonaws.com/LidarExplorer/index.html#/"
     - Select "DEM", "Show where DEMs exist?", "more info", and click to download 1 arc-second data.
