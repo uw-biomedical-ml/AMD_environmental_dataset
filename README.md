@@ -9,7 +9,7 @@ To generate these data files from scratch, run "./code/sh_run_all.sh".
 
 All Environmental Factors Plotted from "final_data/ghi_matched_master_cleaned_plus_zcta.tsv"
 
-[Maps](./figures/all_env_factors_subplots_1e+06.png)
+![Maps](./figures/all_env_factors_subplots_1e+06.png)
 
 
 __Notes:__
