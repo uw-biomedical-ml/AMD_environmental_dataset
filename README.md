@@ -7,10 +7,17 @@ The final data files used in our analysis are located in "final_data/". They are
 
 To generate these data files from scratch, run "./code/sh_run_all.sh".
 
+All Environmental Factors Plotted from "final_data/ghi_matched_master_cleaned_plus_zcta.tsv"
+
+[Maps](./figures/all_env_factors_subplots_1e+06.png)
+
+
 __Notes:__
 - The zcta column in final_data/ghi_matched_master_cleaned_plus_zcta.tsv refers to the nearest ZCTA internal point, not necessarily the ZCTA within which the GHI and DNI latitude and longitude point reside.
-- Data generated in this repo matches our analysis data to 5 decimal places
+- Data generated from scratch using this repo is identical to our analysis data, except for latitude and longitude. Largest discrepancy in either of these metrics was on the order of 1e-6.
+    - However, due to these small discrepancies, the voronoi diagram package used in the paper (ggvoronoi) could not generate maps at full resolution. We thus used the "ggforce" package to generate the maps in this repo.
 - An improvement to the mapping code would map each environmental variable at its native resolution, rather than at GHI resolution. This would actually result in more crisp maps, because the Voronoi cells would be larger with straight lines.
+
 
 
 __Citations for Data Sources:__
