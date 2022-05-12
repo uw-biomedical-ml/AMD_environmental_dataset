@@ -143,7 +143,6 @@ else:
                                              lon_lat_metric,
                                              pollution_col_pos_dict,
                                              metric_name=[pollutant])
-    import pdb; pdb.set_trace()
     pu.write_tsv(master_list,f_str)
 
 

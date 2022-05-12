@@ -32,7 +32,6 @@ zcta_col_pos_dict = {'lon':1,'lat':2,'metric':[0]}
 
 list_out = pu.match_centroids_ghi(gmmc_list,gmmc_col_pos_dict,zcta_list,zcta_col_pos_dict,metric_name=['zcta'])
 
-import pdb; pdb.set_trace()
 
 pu.write_tsv(list_out,
              filepath = "final_data/ghi_matched_master_cleaned_plus_zcta.tsv")
