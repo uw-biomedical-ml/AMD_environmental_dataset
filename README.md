@@ -26,6 +26,8 @@ __Citations for Data Sources:__
     - Select "DEM", "Show where DEMs exist?", "more info", and click to download 1 arc-second data.
 - GHI and DNI information from nsrdb viewer: "https://maps.nrel.gov/nsrdb-viewer"
     - Select GOES PSM v3 dropdown, and download "Multi Year PSM Direct Normal Irradiance" and "Multi Year PSM Global Horizontal Irradiance"
+- Pollution data from EPA: "https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual"
+    - Download "annual_conc_by_monitor_2017.zip"
 - Weather data from NOAA: "https://www.ncei.noaa.gov/pub/data/normals/1981-2010/" 
     - Our project used 1981-2010 30 year Climate Normals, but newer data has become available.
     - download "allstations.txt" from "https://www.ncei.noaa.gov/pub/data/normals/1981-2010/station-inventories/"
